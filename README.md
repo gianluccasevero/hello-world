@@ -1,3 +1,27 @@
-# hello-world
-starting guide
-This is a commit. i'm following the starting guide.
+#include <stdio.h>
+int main()
+{
+   int num;
+   FILE *fptr;
+   fptr = fopen("C:\\program.txt","w");
+
+   if(fptr == NULL)
+   {
+      printf("Error!");   
+      exit(1);             
+   }
+
+   printf("Enter num: ");
+   scanf("%d",&num);
+
+   fprintf(fptr,"%d",num);
+   fclose(fptr);
+
+   return 0;
+}
+]
+
+Makefile:
+
+ex1: ex1.c
+	gcc -o ex1 ex1.c  -I.
