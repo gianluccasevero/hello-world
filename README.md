@@ -19,3 +19,9 @@ int main()
 
    return 0;
 }
+]
+
+Makefile:
+
+ex1: ex1.c
+	gcc -o ex1 ex1.c  -I.
