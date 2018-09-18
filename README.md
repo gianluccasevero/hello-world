@@ -18,3 +18,8 @@ int main()
   
    return 0;
 }
+
+
+Makefile: 
+ex2: ex2.c
+	gcc -o ex2 ex2.c  -I.
